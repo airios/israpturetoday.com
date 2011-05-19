@@ -4,7 +4,7 @@ require 'haml'
 require 'sass'
 require 'bundler/setup'
 
-# Bundler.require(:default)
+Bundler.require(:default)
 
 set :haml, :format => :html5 # default Haml format is :xhtml
 set :sass, :style => :compact
