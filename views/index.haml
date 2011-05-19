@@ -2,19 +2,19 @@
 %html(lang="en")
   %head
     %meta(charset="utf-8")
-    %meta(name="description" content="")
-    %meta(name="keywords" content=@keywords)
-    %title="Is rapture today?"
+    %meta(name="description" content="Checking to see if today is the rapture event.")
+    %meta(name="keywords" content="rapture,jesus,apocalypse,prophecies,bible")
+    %meta(name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0")
+    %title="Is Rapture Today?"
     <!--[if ! lte IE 6]><!-->
-    %link(href="http://fonts.googleapis.com/css?family=PT+Sans|Arvo:regular,italic,bold,bolditalic&subset=latin" rel="stylesheet")
+    %link(href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet")
+    %link(href="/stylesheet.css" media="screen" rel="stylesheet")
     <!--<![endif]-->
     /[if lte IE 6]
       %link(rel="stylesheet" href="http://universal-ie6-css.googlecode.com/files/ie6.1.1.css" media="screen, projection")
     /[if lt IE 9]
       %script(src="//html5shim.googlecode.com/svn/trunk/html5.js")
-    = haml :analytics, :layout => false
   %body
-    #container
-      %h1 NO
-    #ads
+    #container(dir="ltr")
+      = haml :header, :layout => false
       = haml :ads, :layout => false
