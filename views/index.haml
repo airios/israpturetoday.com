@@ -14,9 +14,8 @@
       %link(rel="stylesheet" href="http://universal-ie6-css.googlecode.com/files/ie6.1.1.css" media="screen, projection")
     /[if lt IE 9]
       %script(src="//html5shim.googlecode.com/svn/trunk/html5.js")
+    = haml :analytics, :layout => false
   %body
     #container(dir="ltr")
       = haml :header, :layout => false
       = haml :ads, :layout => false
-    
-  = haml :analytics, :layout => false
